@@ -25,6 +25,8 @@ function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 
+    let vozAtivada = false;
+
     if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
 
